@@ -25,7 +25,7 @@ function createMarkUp(arr) {
 
 function onClick(evt) {
   evt.preventDefault();
-  if (!evt.target === evt.currentTarget) {
+  if (evt.target === evt.currentTarget) {
     return;
   }
   const currentImg = evt.target.closest(".gallery__item");
